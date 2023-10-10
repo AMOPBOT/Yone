@@ -40,3 +40,4 @@ pyrogram
 openai
 youtube_search
 replicate
+TgCrypto
