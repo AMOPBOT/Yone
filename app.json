@@ -29,7 +29,7 @@
     "TOKEN": {
        "description": "Your bot token. Get one from @BotFather duh",
        "required": true,
-       "value": ""
+       "value": "1683925087:AAG2LA8buCPHUY5c-nUV3u3esjw3r6_nd_g"
     },
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
@@ -44,7 +44,7 @@
     "DATABASE_URL": {
        "description": "Your postgres sql db, empty this field if you dont have one.",
        "required": false,
-       "value": "postgres://citus:AbhiModszYT12@c-kora.6xoe5irno5ccbx.postgres.cosmos.azure.com:5432/kora"
+       "value": "postgres://yone:Kushal55@yone.cirqmtrbghab.us-east-1.rds.amazonaws.com:5432/yone"
     },      
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
@@ -55,7 +55,7 @@
     "BOT_NAME": {
        "description": "Insert below your bot, it will appear everywhere",
        "required": true,
-       "value": ""
+       "value": "Yone"
     },
     "OWNER_USERNAME": {
        "description": "Your username without the @",
@@ -69,7 +69,7 @@
     "PHOTO": {
        "description": "Your Telegram Bot Image (Add Link Only).",
        "required": true,
-       "value": "https://graph.org/file/4d325b62578e7005a3b05.jpg"
+       "value": "https://graph.org/file/324a12454d23b5d78dd48.jpg"
     },      
     "DEV_USERS": {
        "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
