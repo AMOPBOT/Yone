@@ -14,6 +14,8 @@ class Config(object):
     API_HASH = "b463bedd791aa733ae2297e6520302fe"
     TOKEN = "1683925087:AAG2LA8buCPHUY5c-nUV3u3esjw3r6_nd_g"
     OWNER_ID = "2105971379"
+    DEEP_API = "c8e3d7fc-1f7e-455b-8019-5c1b7f21047a"
+    OPENAI_KEY = ""
     OWNER_USERNAME = "sultan11100"
     SUPPORT_CHAT = "Yone_Support"
     JOIN_LOGGER = "-1001841879487"
