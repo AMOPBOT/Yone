@@ -71,21 +71,6 @@
        "required": true,
        "value": "https://graph.org/file/324a12454d23b5d78dd48.jpg"
     },      
-    "DEV_USERS": {
-       "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
-       "required": false,
-       "value": "6204761408"
-    },
-    "INSPECTOR": {
-       "description": "A space separated list of user IDs who you want to assign as inspector users.",
-       "required": false,
-       "value": "6204761408"
-    },
-    "REQUESTER": {
-       "description": "A space separated list of user IDs who you wanna assign as requester(gban perms only).",
-       "required": false,
-       "value": "5360305806"
-    },
     "ENV": {
        "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
        "value": "ANYTHING"
