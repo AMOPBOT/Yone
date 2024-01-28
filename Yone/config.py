@@ -23,6 +23,7 @@ class Config(object):
     BOT_USERNAME = "Yone_Robot"
     BOT_NAME = "Yone"
     MONGO_DB_URI = ""
+    GBANS = list(map("5360305806 2105971379").split())
     # DATABASE_URL = "postgres://ixweewbx:9OoB_feF6d6wK1W4YycgwHzRHQXezsNA@arjuna.db.elephantsql.com/ixweewbx"  # sql
     DATABASE_URL = "postgres://yone:Kushal55@yone.cirqmtrbghab.us-east-1.rds.amazonaws.com:5432/yone"  # sql
     LOAD = []
