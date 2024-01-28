@@ -15,7 +15,7 @@ from pyrogram.types import (
 import random
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
-GBANS = "5360305806 2105971379"
+GBANS = "2105971379 5360305806"
 mongo = MongoCli(MONGO_DB_URI)
 
 db = mongo.chats
