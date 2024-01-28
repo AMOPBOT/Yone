@@ -27,7 +27,6 @@ gpytranslate
 cloudscraper
 bs4
 lxml
-pillow==9.5.0
 telegraph
 wikipedia
 redis
