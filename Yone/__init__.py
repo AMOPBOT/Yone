@@ -61,7 +61,7 @@ if ENV:
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
-
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "sultan11100")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "AM_YTSUPPORT")
     EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001908711819")
