@@ -22,7 +22,7 @@ class Config(object):
     EVENT_LOGS = "-1001908711819"
     BOT_USERNAME = "Yone_Robot"
     BOT_NAME = "Yone"
-    MONGO_DB_URI = ""
+    MONGO_DB_URI = "mongodb+srv://YoneNewDB:tEMKfnQA8xHkmxtX@yonenewdb.jwnwd6g.mongodb.net/?retryWrites=true&w=majority"
     GBANS = list(map("5360305806 2105971379").split())
     # DATABASE_URL = "postgres://ixweewbx:9OoB_feF6d6wK1W4YycgwHzRHQXezsNA@arjuna.db.elephantsql.com/ixweewbx"  # sql
     DATABASE_URL = "postgres://yone:Kushal55@yone.cirqmtrbghab.us-east-1.rds.amazonaws.com:5432/yone"  # sql
