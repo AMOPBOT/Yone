@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
-from Yone import OWNER_ID, pbot as AM, MONGO_DB_URI
+from Yone import OWNER_ID, pbot as AM, MONGO_DB_URI, DEV_USERS 
 import asyncio
 from pyrogram import *
 from pyrogram.types import *
@@ -15,8 +15,6 @@ from pyrogram.types import (
 import random
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
-GBANS = 2105971379 
-GBANS.append(5360305806)
 mongo = MongoCli(MONGO_DB_URI)
 
 db = mongo.chats
@@ -106,7 +104,7 @@ async def send_msg(user_id, message):
     except Exception:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
-@AM.on_message(filters.command("gcast") & filters.user(GBANS))
+@AM.on_message(filters.command("gcast") & filters.user(DEV_USERS))
 async def broadcast(_, message):
     if not message.reply_to_message:
         await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ɪᴛ.")
@@ -146,7 +144,7 @@ async def broadcast(_, message):
 
 
 
-@AM.on_message(filters.command("announce") & filters.user(GBANS))
+@AM.on_message(filters.command("announce") & filters.user(DEV_USERS))
 async def announced(_, message):
     if message.reply_to_message:
       to_send=message.reply_to_message.id
