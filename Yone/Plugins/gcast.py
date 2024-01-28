@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
-from Yone import OWNER_ID, pbot as AM, MONGO_DB_URI, GBANS
+from Yone import OWNER_ID, pbot as AM, MONGO_DB_URI
 import asyncio
 from pyrogram import *
 from pyrogram.types import *
@@ -14,6 +14,8 @@ from pyrogram.types import (
 )
 import random
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
+
+GBANS = list(map("5360305806 2105971379").split())
 
 mongo = MongoCli(MONGO_DB_URI)
 
