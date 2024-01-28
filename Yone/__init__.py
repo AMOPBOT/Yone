@@ -76,7 +76,6 @@ if ENV:
     BOT_NAME = os.environ.get("BOT_NAME", "Yone")
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD","").split()
-    GBANS = list(map(os.environ.get("GBANS", "5360305806 2105971379").split()))
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
     REDIS_URL = os.environ.get("REDIS_URL","redis://default:mvwQl6zkrKuhD584XKB8kCOEB2Os8vlJ@redis-14834.c244.us-east-1-2.ec2.cloud.redislabs.com:14834")
@@ -121,6 +120,7 @@ else:
     BOT_USERNAME = Config.BOT_USERNAME
     BOT_NAME = Config.BOT_NAME
     WORKERS = Config.WORKERS
+    GBANS = Config.GBANS
     DEL_CMDS = Config.DEL_CMDS
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
