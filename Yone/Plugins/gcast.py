@@ -25,10 +25,9 @@ db = mongo.users
 db = db.users
 
 AM_PIC = [
-    "https://graph.org/file/98e87a02d3fffdaef2fd5.jpg",
-    "https://graph.org/file/98e87a02d3fffdaef2fd5.jpg",
-    "https://graph.org/file/98e87a02d3fffdaef2fd5.jpg",
-    "https://graph.org/file/98e87a02d3fffdaef2fd5.jpg"
+    "https://graph.org/file/324a12454d23b5d78dd48.jpg",
+    "https://graph.org/file/324a12454d23b5d78dd48.jpg",
+    "https://graph.org/file/324a12454d23b5d78dd48.jpg"
 ]
 
 #CHATGROUP
