@@ -29,7 +29,7 @@
     "TOKEN": {
        "description": "Your bot token. Get one from @BotFather duh",
        "required": true,
-       "value": "1683925087:AAErwwkqxKrCA-x_5G164ujCfIfLpuOMD8A"
+       "value": "1683925087:AAEKWjNEbZ8x68HotlPXCdTlakvShJPsCug"
     },
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
