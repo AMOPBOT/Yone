@@ -23,7 +23,6 @@ AM = 5360305806
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
-DEV_AND_MORE = DEV_USERS.append(int(OWNER_ID))
 
 def get_user_id(username):
     # ensure valid userid
