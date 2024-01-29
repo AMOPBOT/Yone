@@ -253,5 +253,5 @@ dispatcher.add_handler(USER_HANDLER, USERS_GROUP)
 dispatcher.add_handler(CHATLIST_HANDLER)
 dispatcher.add_handler(CHAT_CHECKER_HANDLER, CHAT_GROUP)
 
-__mod_name__ = "dev"
+__mod_name__ = "Am"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), CHATLIST_HANDLER]
