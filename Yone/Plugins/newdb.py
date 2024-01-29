@@ -6,7 +6,7 @@ from telegram import TelegramError, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 from Yone import pbot as Mukesh
-from Yone import OWNER_ID, dispatcher
+from Yone import OWNER_ID, dispatcher, LOGGER as  logger
 from Yone.Database.NoSql.users_db import get_all_users
 import Yone.Database.NoSql.users_db as user_db 
 from pyrogram import Client
