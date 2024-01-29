@@ -5,10 +5,10 @@ from pyrogram.types import Message
 from telegram import TelegramError, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
-import Yone.Database.NoSql as user_db 
 from Yone import pbot as Mukesh
-from Yone import DEV_USERS, LOGGER as  logger, OWNER_ID, dispatcher, DEV_USERS
-from Yone.Database.users_sql import get_all_chats, get_all_users
+from Yone import OWNER_ID, dispatcher
+from Yone.Database.NoSql.users_db import get_all_users
+import Yone.Database.NoSql.users_db as user_db 
 from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram.errors import (
@@ -23,6 +23,7 @@ AM = 5360305806
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
+
 
 def get_user_id(username):
     # ensure valid userid
@@ -53,13 +54,11 @@ def get_user_id(username):
     return None
 
 
-
-
 @Mukesh.on_message(filters.command("bchat") & filters.user(AM) & filters.reply)
 async def broadcast_handler(bot: Client, m: Message):
     all_chats = user_db.get_all_chats() or []
     await bot.send_message(
-        OWNER_ID,
+        AM,
         f"{m.from_user.mention}  Iꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ Bʀᴏᴀᴅᴄᴀꜱᴛ......",
     )
     broadcast_msg = m.reply_to_message
@@ -114,7 +113,7 @@ async def send_chat(chat_id, message):
 async def broadcast_handler(bot: Client, m: Message):
     all_users = get_all_users()
     await bot.send_message(
-        OWNER_ID,
+        AM,
         f"{m.from_user.mention} or {m.from_user.id} Iꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ Bʀᴏᴀᴅᴄᴀꜱᴛ......",
     )
     broadcast_msg = m.reply_to_message
@@ -184,6 +183,7 @@ def log_user(update: Update, context: CallbackContext):
         user_db.update_user(msg.forward_from.id, msg.forward_from.username)
 
 
+@sudo_plus
 def chats(update: Update, context: CallbackContext):
     all_chats = user_db.get_all_chats() or []
     chatfile = "ʟɪsᴛs ᴏғ ᴄʜᴀᴛ.\n0. ᴄʜᴀᴛ ɴᴀᴍᴇ | ᴄʜᴀᴛ ɪᴅ | ᴍᴇᴍʙᴇʀs ᴄᴏᴜɴᴛ\n"
